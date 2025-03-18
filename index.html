@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subdomain Takeover PoC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 { color: #333; }
+        code { background: #eee; padding: 5px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Subdomain Takeover PoC by Hitesh Patra</h1>
+        <p>This page is hosted as a demonstration of a subdomain takeover.</p>
+        <h2>What is Subdomain Takeover?</h2>
+        <p>Subdomain Takeover occurs when a subdomain points to an external service that is no longer claimed by the original owner.</p>
+        <h2>Steps to Verify:</h2>
+        <ol>
+            <li>Identify subdomains pointing to external services.</li>
+            <li>Check if the service is unclaimed.</li>
+            <li>Claim the service and deploy your own content.</li>
+        </ol>
+        <h2>Proof of Concept:</h2>
+        <p>If you're seeing this page on a vulnerable subdomain, it means the takeover was successful!</p>
+        <p><code>Host: vulnerable.example.com</code></p>
+    </div>
+</body>
+</html>
